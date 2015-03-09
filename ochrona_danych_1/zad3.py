@@ -18,7 +18,7 @@ class Language:
         sys.stdout.write('DISTRIBUTION FOR LANGUAGE: ' + self.name)
         for i in range(0, 26):
             if d[i] > 0:
-                sys.stdout.write(chr(i + ord('A')) + ': ' + str(float(d[i]) / self.amount) + '\n')
+                sys.stdout.write(chr(i + ord('A')) + ': ' + str(float(d[i]) / self.amount * 100) + '%\n')
     pass
 
 lan = []
